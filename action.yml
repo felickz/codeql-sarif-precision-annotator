@@ -1,4 +1,4 @@
-name: 'codeql-sarif-precisio-annotator'
+name: 'codeql-sarif-precision-annotator'
 description:
   'Enhance CodeQL SARIF results file to include a tag with the query precision.'
 author: '@felickz'
