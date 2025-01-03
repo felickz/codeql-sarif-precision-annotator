@@ -1,3 +1,12 @@
+# CodeQL SARIF Precision Annotator
+
+Annotates CodeQL SARIF files with precision information from
+[GitHub Code Scanning query list artifact](https://github.com/github/codeql/actions/workflows/query-list.yml?query=branch%3Acodeql-cli%2Flatest)
+
+## Local Dev
+
+Test via `npx local-action . src/main.js .env.example`
+
 # Create a JavaScript Action
 
 [![GitHub Super-Linter](https://github.com/actions/javascript-action/actions/workflows/linter.yml/badge.svg)](https://github.com/super-linter/super-linter)
