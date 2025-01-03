@@ -1,19 +1,14 @@
-name: 'The name of your action here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
-
-# Define your inputs here.
+name: 'codeql-sarif-precisio-annotator'
+description:
+  'Enhance CodeQL SARIF results file to include a tag with the query precision.'
+author: '@felickz'
 inputs:
-  milliseconds:
-    description: 'Your input description here'
+  sarif_file:
     required: true
-    default: '1000'
-
-# Define your outputs here.
-outputs:
-  time:
-    description: 'Your output description here'
-
+    description: 'The CodeQL SARIF result file'
+  output_file:
+    required: true
+    description: 'The output SARIF file path'
 runs:
   using: node20
   main: dist/index.js
