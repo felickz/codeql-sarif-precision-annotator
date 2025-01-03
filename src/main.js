@@ -2,8 +2,6 @@ const core = require('@actions/core')
 const github = require('@actions/github')
 const fs = require('fs').promises
 const path = require('path')
-const fetch = require('node-fetch')
-const AdmZip = require('adm-zip')
 const csv = require('csv-parse/sync')
 
 async function run() {
@@ -22,10 +20,17 @@ async function run() {
     let csvContent
     if (useLocalCsv) {
       // Load CSV from local folder
-      const localCsvPath = path.join(
+      let localCsvPath = path.join(
         __dirname,
         '../data/code-scanning-query-list/code-scanning-query-list.csv'
       )
+
+      // Check if the file exists, if not, use the alternative path (published in dist/code-scanning-query-list.csv)
+      try {
+        await fs.access(localCsvPath)
+      } catch (error) {
+        localCsvPath = path.join(__dirname, './code-scanning-query-list.csv')
+      }
       csvContent = await fs.readFile(localCsvPath, 'utf8')
     } else {
       // // Download and extract the CSV file
