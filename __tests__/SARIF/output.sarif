@@ -444,7 +444,7 @@
                     "concurrency",
                     "security",
                     "external/cwe/cwe-362",
-                    "precision:medium"
+                    "medium precision"
                   ],
                   "description": "The class has a field that directly or indirectly make use of a static System.Security.Cryptography.ICryptoTransform object.\n              Using this an instance of this class in concurrent threads is dangerous as it may not only result in an error,\n              but under some circumstances may also result in incorrect results.",
                   "id": "cs/thread-unsafe-icryptotransform-field-in-class",
@@ -477,7 +477,7 @@
                     "concurrency",
                     "security",
                     "external/cwe/cwe-362",
-                    "precision:medium"
+                    "medium precision"
                   ],
                   "description": "An instance of a class that either implements or has a field of type System.Security.Cryptography.ICryptoTransform is being captured by a lambda,\n              and used in what seems to be a thread initialization method.\n              Using an instance of this class in concurrent threads is dangerous as it may not only result in an error,\n              but under some circumstances may also result in incorrect results.",
                   "id": "cs/thread-unsafe-icryptotransform-captured-in-lambda",
@@ -510,7 +510,7 @@
                     "security",
                     "external/cwe/cwe-258",
                     "external/cwe/cwe-862",
-                    "precision:medium"
+                    "medium precision"
                   ],
                   "description": "Finds empty passwords in configuration files.",
                   "id": "cs/empty-password-in-configuration",
@@ -544,7 +544,7 @@
                     "external/cwe/cwe-13",
                     "external/cwe/cwe-256",
                     "external/cwe/cwe-313",
-                    "precision:medium"
+                    "medium precision"
                   ],
                   "description": "Finds passwords in configuration files.",
                   "id": "cs/password-in-configuration",
@@ -576,7 +576,7 @@
                   "tags": [
                     "security",
                     "external/cwe/cwe-384",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "Reusing an existing session as a different user could allow\n              an attacker to access someone else's account by using\n              their session.",
                   "id": "cs/session-reuse",
@@ -609,7 +609,7 @@
                     "security",
                     "external/cwe/cwe-12",
                     "external/cwe/cwe-248",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "ASP.NET applications should not set the 'customError' mode to \"off\" without providing\n              a global error handler, otherwise they may leak exception information.",
                   "id": "cs/web/missing-global-error-handler",
@@ -643,7 +643,7 @@
                     "external/cwe/cwe-312",
                     "external/cwe/cwe-315",
                     "external/cwe/cwe-359",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "Sensitive information stored without encryption or hashing can expose it to an\n              attacker.",
                   "id": "cs/cleartext-storage-of-sensitive-information",
@@ -675,7 +675,7 @@
                   "tags": [
                     "security",
                     "external/cwe/cwe-338",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "Using a cryptographically weak pseudo-random number generator to generate a\n              security sensitive value may allow an attacker to predict what sensitive value will\n              be generated.",
                   "id": "cs/insecure-randomness",
@@ -707,7 +707,7 @@
                   "tags": [
                     "security",
                     "external/cwe/cwe-601",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "URL redirection based on unvalidated user input\n              may cause redirection to malicious web sites.",
                   "id": "cs/web/unvalidated-url-redirection",
@@ -739,7 +739,7 @@
                   "tags": [
                     "security",
                     "external/cwe/cwe-287",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "Finds cookies with an overly broad path.",
                   "id": "cs/web/broad-cookie-path",
@@ -771,7 +771,7 @@
                   "tags": [
                     "security",
                     "external/cwe/cwe-113",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "Finds places where header checking is disabled.",
                   "id": "cs/web/disabled-header-checking",
@@ -829,7 +829,7 @@
                   "tags": [
                     "security",
                     "external/cwe/cwe-327",
-                    "precision:medium"
+                    "medium precision"
                   ],
                   "description": "Using an SQL Server connection without enforcing encryption is a security vulnerability.",
                   "id": "cs/insecure-sql-connection",
@@ -861,7 +861,7 @@
                   "tags": [
                     "security",
                     "external/cwe/cwe-639",
-                    "precision:medium"
+                    "medium precision"
                   ],
                   "description": "Using user input to control which object is modified without\n              proper authorization checks allows an attacker to modify arbitrary objects.",
                   "id": "cs/web/insecure-direct-object-reference",
@@ -893,7 +893,7 @@
                   "tags": [
                     "security",
                     "external/cwe/cwe-502",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "Deserializing a delegate allows for remote code execution when an\n              attacker can control the serialized data.",
                   "id": "cs/deserialized-delegate",
@@ -956,7 +956,7 @@
                   "tags": [
                     "security",
                     "external/cwe/cwe-502",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "Calling an unsafe deserializer with data controlled by an attacker\n              can lead to denial of service and other security problems.",
                   "id": "cs/unsafe-deserialization-untrusted-input",
@@ -989,7 +989,7 @@
                     "security",
                     "external/cwe/cwe-451",
                     "external/cwe/cwe-829",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "If the 'X-Frame-Options' setting is not provided, a malicious user may be able to\n              overlay their own UI on top of the site by using an iframe.",
                   "id": "cs/web/missing-x-frame-options",
@@ -1022,7 +1022,7 @@
                     "security",
                     "external/cwe/cwe-319",
                     "external/cwe/cwe-614",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "Omitting the 'requireSSL' attribute allows data to be transmitted insecurely\n              using HTTP. Always set 'requireSSL' to 'true' to ensure that HTTPS\n              is used at all times.",
                   "id": "cs/web/requiressl-not-set",
@@ -1054,7 +1054,7 @@
                   "tags": [
                     "security",
                     "external/cwe/cwe-114",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "Loading a .NET assembly based on a path constructed from user-controlled sources\n              may allow a malicious user to load code which modifies the program in unintended\n              ways.",
                   "id": "cs/assembly-path-injection",
@@ -1088,7 +1088,7 @@
                     "security",
                     "external/cwe/cwe-078",
                     "external/cwe/cwe-088",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "Using externally controlled strings in a command line may allow a malicious\n              user to change the meaning of the command.",
                   "id": "cs/command-line-injection",
@@ -1120,7 +1120,7 @@
                   "tags": [
                     "security",
                     "external/cwe/cwe-201",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "Transmitting sensitive information to the user is a potential security risk.",
                   "id": "cs/sensitive-data-transmission",
@@ -1152,7 +1152,7 @@
                   "tags": [
                     "security",
                     "external/cwe/cwe-20",
-                    "precision:medium"
+                    "medium precision"
                   ],
                   "description": "A write that looks like it may be bypassing runtime checks.",
                   "id": "cs/serialization-check-bypass",
@@ -1184,7 +1184,7 @@
                   "tags": [
                     "security",
                     "external/cwe/cwe-327",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "Finds uses of encryption algorithms that are weak and obsolete",
                   "id": "cs/weak-encryption",
@@ -1217,7 +1217,7 @@
                     "security",
                     "external/cwe/cwe-079",
                     "external/cwe/cwe-116",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "Writing user input directly to a web page\n              allows for a cross-site scripting vulnerability.",
                   "id": "cs/web/xss",
@@ -1249,7 +1249,7 @@
                   "tags": [
                     "security",
                     "external/cwe/cwe-134",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "Passing untrusted format strings from remote data sources can throw exceptions\n              and cause a denial of service.",
                   "id": "cs/uncontrolled-format-string",
@@ -1283,7 +1283,7 @@
                     "external/cwe/cwe-094",
                     "external/cwe/cwe-095",
                     "external/cwe/cwe-096",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "Treating externally controlled strings as code can allow an attacker to execute\n              malicious code.",
                   "id": "cs/code-injection",
@@ -1318,7 +1318,7 @@
                     "external/cwe/cwe-120",
                     "external/cwe/cwe-122",
                     "external/cwe/cwe-788",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "Using the result of a virtual method call in pointer arithmetic without\n              validation is dangerous because the method may be overridden by a subtype\n              to return any value.",
                   "id": "cs/unvalidated-local-pointer-arithmetic",
@@ -1354,7 +1354,7 @@
                     "external/cwe/cwe-036",
                     "external/cwe/cwe-073",
                     "external/cwe/cwe-099",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "Accessing paths influenced by users can allow an attacker to access unexpected resources.",
                   "id": "cs/path-injection",
@@ -1386,7 +1386,7 @@
                   "tags": [
                     "security",
                     "external/cwe/cwe-022",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "Extracting files from a malicious ZIP file, or similar type of archive, without\n              validating that the destination file path is within the destination directory\n              can allow an attacker to unexpectedly gain access to resources.",
                   "id": "cs/zipslip",
@@ -1419,7 +1419,7 @@
                     "security",
                     "external/cwe/cwe-327",
                     "external/cwe/cwe-780",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "Finds uses of RSA encryption with inadequate padding.",
                   "id": "cs/inadequate-rsa-padding",
@@ -1453,7 +1453,7 @@
                     "external/cwe/cwe-611",
                     "external/cwe/cwe-827",
                     "external/cwe/cwe-776",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "Untrusted XML is read with an insecure resolver and DTD processing enabled.",
                   "id": "cs/xml/insecure-dtd-handling",
@@ -1520,7 +1520,7 @@
                     "external/cwe/cwe-285",
                     "external/cwe/cwe-284",
                     "external/cwe/cwe-862",
-                    "precision:medium"
+                    "medium precision"
                   ],
                   "description": "Sensitive actions should have authorization checks to prevent them from being used by malicious actors.",
                   "id": "cs/web/missing-function-level-access-control",
@@ -1552,7 +1552,7 @@
                   "tags": [
                     "security",
                     "external/cwe/cwe-539",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "Persistent cookies are vulnerable to attacks.",
                   "id": "cs/web/persistent-cookie",
@@ -1584,7 +1584,7 @@
                   "tags": [
                     "security",
                     "external/cwe/cwe-117",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "Building log entries from user-controlled sources is vulnerable to\n              insertion of forged log entries by a malicious user.",
                   "id": "cs/log-forging",
@@ -1617,7 +1617,7 @@
                     "security",
                     "external/cwe/cwe-730",
                     "external/cwe/cwe-400",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "User input should not be used in regular expressions without first being escaped,\n              otherwise a malicious user may be able to provide a regex that could require\n              exponential time on certain inputs.",
                   "id": "cs/regex-injection",
@@ -1651,7 +1651,7 @@
                     "external/cwe/cwe-1333",
                     "external/cwe/cwe-730",
                     "external/cwe/cwe-400",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "User input should not be matched against a regular expression that could require\n              exponential time on certain input.",
                   "id": "cs/redos",
@@ -1683,7 +1683,7 @@
                   "tags": [
                     "security",
                     "external/cwe/cwe-326",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "Finds uses of encryption algorithms with too small a key size",
                   "id": "cs/insufficient-key-size",
@@ -1767,7 +1767,7 @@
                   "tags": [
                     "security",
                     "external/cwe/cwe-112",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "User input should not be processed as XML without validating it against a known\n              schema.",
                   "id": "cs/xml/missing-validation",
@@ -1801,7 +1801,7 @@
                     "external/cwe/cwe-807",
                     "external/cwe/cwe-247",
                     "external/cwe/cwe-350",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "User-controlled bypassing of sensitive methods may allow attackers to avoid\n              passing through authentication systems.",
                   "id": "cs/user-controlled-bypass",
@@ -1833,7 +1833,7 @@
                   "tags": [
                     "security",
                     "external/cwe/cwe-287",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "Finds cookies with an overly broad domain.",
                   "id": "cs/web/broad-cookie-domain",
@@ -1865,7 +1865,7 @@
                   "tags": [
                     "security",
                     "external/cwe/cwe-359",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "If private information is written to an external location, it may be accessible by\n              unauthorized persons.",
                   "id": "cs/exposure-of-sensitive-information",
@@ -1898,7 +1898,7 @@
                     "security",
                     "external/cwe/cwe-209",
                     "external/cwe/cwe-497",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "Leaking information about an exception, such as messages and stack traces, to an\n              external user can expose implementation details that are useful to an attacker for\n              developing a subsequent exploit.",
                   "id": "cs/information-exposure-through-exception",
@@ -1930,7 +1930,7 @@
                   "tags": [
                     "security",
                     "external/cwe/cwe-352",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "Handling a POST request without verifying that the request came from the user\n              allows a malicious attacker to submit a request on behalf of the user.",
                   "id": "cs/web/missing-token-validation",
@@ -1962,7 +1962,7 @@
                   "tags": [
                     "security",
                     "external/cwe/cwe-643",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "Building an XPath expression from user-controlled sources is vulnerable to insertion of\n              malicious code by the user.",
                   "id": "cs/xml/xpath-injection",
@@ -2028,7 +2028,7 @@
                     "frameworks/asp.net",
                     "external/cwe/cwe-11",
                     "external/cwe/cwe-532",
-                    "precision:very-high"
+                    "very-high precision"
                   ],
                   "description": "ASP.NET projects should not produce debug binaries when deploying to production as\n              debug builds provide additional information useful to a malicious attacker.",
                   "id": "cs/web/debug-binary",
@@ -2060,7 +2060,7 @@
                   "tags": [
                     "security",
                     "external/cwe/cwe-099",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "Building a resource descriptor from untrusted user input is vulnerable to a\n              malicious user providing an unintended resource.",
                   "id": "cs/resource-injection",
@@ -2092,7 +2092,7 @@
                   "tags": [
                     "security",
                     "external/cwe/cwe-327",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "Highlights uses of the encryption mode 'CipherMode.ECB'. This mode should normally not be used because it is vulnerable to replay attacks.",
                   "id": "cs/ecb-encryption",
@@ -2124,7 +2124,7 @@
                   "tags": [
                     "security",
                     "external/cwe/cwe-091",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "Building an XML document from user-controlled sources is vulnerable to insertion of\n              malicious code by the user.",
                   "id": "cs/xml-injection",
@@ -2156,7 +2156,7 @@
                   "tags": [
                     "security",
                     "external/cwe/cwe-089",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "Building a SQL query from user-controlled sources is vulnerable to insertion of\n              malicious SQL code by the user.",
                   "id": "cs/sql-injection",
@@ -2250,7 +2250,7 @@
                     "security",
                     "frameworks/asp.net",
                     "external/cwe/cwe-16",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "ASP.NET pages should not disable the built-in request validation.",
                   "id": "cs/web/request-validation-disabled",
@@ -2282,7 +2282,7 @@
                   "tags": [
                     "security",
                     "external/cwe/cwe-548",
-                    "precision:very-high"
+                    "very-high precision"
                   ],
                   "description": "Directory browsing should not be enabled in production as it can leak sensitive information.",
                   "id": "cs/web/directory-browse-enabled",
@@ -2316,7 +2316,7 @@
                     "external/cwe/cwe-259",
                     "external/cwe/cwe-321",
                     "external/cwe/cwe-798",
-                    "precision:medium"
+                    "medium precision"
                   ],
                   "description": "Credentials are hard-coded in a connection string in the source code of the application.",
                   "id": "cs/hardcoded-connection-string-credentials",
@@ -2350,7 +2350,7 @@
                     "external/cwe/cwe-259",
                     "external/cwe/cwe-321",
                     "external/cwe/cwe-798",
-                    "precision:medium"
+                    "medium precision"
                   ],
                   "description": "Credentials are hard coded in the source code of the application.",
                   "id": "cs/hardcoded-credentials",
@@ -2382,7 +2382,7 @@
                   "tags": [
                     "security",
                     "external/cwe/cwe-090",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "Building an LDAP query from user-controlled sources is vulnerable to insertion of\n              malicious LDAP code by the user.",
                   "id": "cs/ldap-injection",
@@ -2416,7 +2416,7 @@
                     "maintainability",
                     "frameworks/asp.net",
                     "external/cwe/cwe-348",
-                    "precision:medium"
+                    "medium precision"
                   ],
                   "description": "Finds ambiguous accesses to server variables",
                   "id": "cs/web/ambiguous-server-variable",
@@ -2449,7 +2449,7 @@
                     "maintainability",
                     "frameworks/asp.net",
                     "external/cwe/cwe-348",
-                    "precision:medium"
+                    "medium precision"
                   ],
                   "description": "Finds ambiguous accesses to client variables",
                   "id": "cs/web/ambiguous-client-variable",
@@ -2482,7 +2482,7 @@
                     "maintainability",
                     "frameworks/asp.net",
                     "external/cwe/cwe-434",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "Finds uses of file upload",
                   "id": "cs/web/file-upload",
@@ -2515,7 +2515,7 @@
                     "security",
                     "experimental",
                     "external/cwe/cwe-1004",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "Omitting the 'HttpOnly' attribute for security sensitive data allows\n              malicious JavaScript to steal it in case of XSS vulnerability. Always set\n              'HttpOnly' to 'true' to authentication related cookie to make it\n              not accessible by JavaScript.",
                   "id": "cs/web/cookie-httponly-not-set",
@@ -2547,7 +2547,7 @@
                     "security",
                     "experimental",
                     "solorigate",
-                    "precision:low"
+                    "low precision"
                   ],
                   "description": "Detects the use of native functions that can be used for malicious intent or unsafe handling.",
                   "id": "cs/backdoor/dangerous-native-functions",
@@ -2579,7 +2579,7 @@
                     "security",
                     "experimental",
                     "solorigate",
-                    "precision:medium"
+                    "medium precision"
                   ],
                   "description": "Flow from a function retrieving process name to a hash function.",
                   "id": "cs/backdoor/process-name-to-hash-function",
@@ -2611,7 +2611,7 @@
                     "security",
                     "experimental",
                     "solorigate",
-                    "precision:Low"
+                    "Low precision"
                   ],
                   "description": "If there is data flow from a file's last modification date and an offset to a condition statement, this could trigger a \"time bomb\".",
                   "id": "cs/backdoor/potential-time-bomb",
@@ -2644,7 +2644,7 @@
                     "cryptography",
                     "experimental",
                     "external/cwe/cwe-327",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "Unsafe usage of v1 version of Azure Storage client-side encryption, please refer to http://aka.ms/azstorageclientencryptionblog",
                   "id": "cs/azure-storage/unsafe-usage-of-client-side-encryption-version",
@@ -2677,7 +2677,7 @@
                     "experimental",
                     "external/cwe/cwe-319",
                     "external/cwe/cwe-614",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "Omitting the 'Secure' attribute allows data to be transmitted insecurely\n              using HTTP. Always set 'Secure' to 'true' to ensure that HTTPS\n              is used at all times.",
                   "id": "cs/web/cookie-secure-not-set",
@@ -2737,7 +2737,7 @@
                   "tags": [
                     "security",
                     "experimental",
-                    "precision:medium"
+                    "medium precision"
                   ],
                   "description": "Making an XML deserialization call with a type derived from DataSet or DataTable types and may lead to a security problem. Please visit https://go.microsoft.com/fwlink/?linkid=2132227 for details.\"",
                   "id": "cs/dataset-serialization/xml-deserialization-with-dataset",
@@ -2768,7 +2768,7 @@
                   "tags": [
                     "security",
                     "experimental",
-                    "precision:medium"
+                    "medium precision"
                   ],
                   "description": "Defining an XML serializable class that includes members that derive from DataSet or DataTable type may lead to a security problem. Please visit https://go.microsoft.com/fwlink/?linkid=2132227 for details.",
                   "id": "cs/dataset-serialization/defining-potentially-unsafe-xml-serializer",
@@ -2799,7 +2799,7 @@
                   "tags": [
                     "security",
                     "experimental",
-                    "precision:medium"
+                    "medium precision"
                   ],
                   "description": "Unsafe type is used in data contract serializer. Please visit https://go.microsoft.com/fwlink/?linkid=2132227 for details.\"",
                   "id": "cs/dataset-serialization/unsafe-type-used-data-contract-serializer",
@@ -2862,7 +2862,7 @@
                     "experimental",
                     "JsonWebTokenHandler",
                     "manual-verification-required",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "Check if security sensitive token validations for `JsonWebTokenHandler` are being disabled.",
                   "id": "cs/json-webtoken-handler/security-validations-disabled",
@@ -2895,7 +2895,7 @@
                     "experimental",
                     "JsonWebTokenHandler",
                     "manual-verification-required",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "Security sensitive validations for `JsonWebTokenHandler` are being delegated to a function that seems to always return true.\n   Higher precision version checks for exception throws, so less false positives are expected.",
                   "id": "cs/json-webtoken-handler/delegated-security-validations-always-return-true",
@@ -2927,7 +2927,7 @@
                     "security",
                     "experimental",
                     "external/cwe/cwe-918",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "Making a network request with user-controlled data in the URL allows for request forgery attacks.",
                   "id": "cs/request-forgery",
@@ -2962,7 +2962,7 @@
                     "external/cwe/cwe-023",
                     "external/cwe/cwe-036",
                     "external/cwe/cwe-073",
-                    "precision:high"
+                    "high precision"
                   ],
                   "description": "The WebClient class allows developers to request resources,\n              accessing resources influenced by users can allow an attacker to access local files.",
                   "id": "cs/webclient-path-injection",

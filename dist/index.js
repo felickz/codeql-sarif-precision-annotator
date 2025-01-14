@@ -29979,11 +29979,11 @@ async function run() {
 
             // Check if a precision tag already exists and remove it
             rule.properties.tags = rule.properties.tags.filter(
-              tag => !tag.startsWith('precision:')
+              tag => !tag.includes(' precision')
             )
 
             // Add the new precision tag
-            rule.properties.tags.push(`precision:${precision}`)
+            rule.properties.tags.push(`${precision} precision`)
           }
         }
       }

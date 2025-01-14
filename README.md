@@ -15,13 +15,13 @@ Configure CodeQL Action to not automatically upload, process the default SARIF, 
         with:
           upload: false
           output: sarif-results
-      
+
       - name: Annotate CodeQL SARIF with Precision tag
         uses: felickz/codeql-sarif-precision-annotator@main
         with:
           sarif_file: sarif-results/${{matrix.language}}.sarif
           output_file: sarif-results/${{matrix.language}}-precision.sarif
-      
+
       - name: Upload SARIF
         uses: github/codeql-action/upload-sarif@v3
         with:
