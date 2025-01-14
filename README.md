@@ -3,7 +3,12 @@
 Annotates CodeQL SARIF files with precision information from
 [GitHub Code Scanning query list artifact](https://github.com/github/codeql/actions/workflows/query-list.yml?query=branch%3Acodeql-cli%2Flatest)
 
-![image](https://github.com/user-attachments/assets/af5a582f-9103-4274-8354-c92d642b686c)
+Alert View:
+![image](https://github.com/user-attachments/assets/723c2745-064c-4e35-9725-6be4d0fb52e2)
+
+Filter:
+
+![image](https://github.com/user-attachments/assets/c22a52d0-06c8-4f67-8439-3658b57a9287)
 
 ## Usage
 
